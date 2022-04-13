@@ -1,12 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-import './App.css';
+import Container from './components/Container';
+import Card from './components/Card';
+import Profile from './components/Profile';
+
+import data from '../data';
 
 const App = () => (
-  <>
-  <div>App</div>
-  <div>{process.env.TEST}</div>
-  </>
+  <Container>
+    <Card>
+      <Profile {...data.profile} />
+    </Card>
+  </Container>
 );
 
 export default App;

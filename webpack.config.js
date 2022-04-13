@@ -1,6 +1,9 @@
 const path = require('path');
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   // 進入點
@@ -38,9 +41,22 @@ module.exports = {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
+    new Dotenv({
+      // 允許讀取 process.env 下的任意系統變量
+      systemvars: true,
+    }),
     new HtmlWebpackPlugin({
       template: 'public/index.html'
-    })
+    }),
+    // 複製靜態檔案
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'public/assets/',
+          to: 'assets',
+        }
+      ]
+    }),
   ],
   mode: 'development',
   devServer: {

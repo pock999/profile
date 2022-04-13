@@ -6,6 +6,13 @@ export default {
     engName: 'Rick',
     imgUrl,
     email: 'hpx210650@gmail.com',
-    github: 'https://github.com/pock999',
+    github: {
+      url: 'https://github.com/pock999',
+      account: 'pock999',
+    },
+    medium: {
+      url: 'https://medium.com/@rickh999',
+      account: '@rickh999',
+    },
   },
 };

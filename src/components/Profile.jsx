@@ -2,6 +2,10 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMediumM, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 const ComponentStyle = styled.div`
   background: linear-gradient(100deg, #6fa8dc 50%, #3d85c6 50%);
   color: white;
@@ -18,13 +22,31 @@ const ComponentStyle = styled.div`
   }
 `;
 
+const NameStyle = styled.span`
+  color: white;
+  font-size: 20px;
+  padding-top: 5px;
+`;
+
+const LinkStyle = styled.a`
+  color: white;
+  text-decoration:none;
+  padding-top: 5px;
+  font-size: 18px;
+  transition-duration: 0.5s;
+
+  &:hover {
+    color: #ededed;
+  }
+`;
+
 // 照片(imgUrl)
 // 名字(name)
 // 英文名字(engName)
 // mail(email)
 // github(github)
 
-export default ({ imgUrl, name, engName, email, github }) => (
+export default ({ imgUrl, name, engName, email, github, medium }) => (
   <ComponentStyle>
     <div
       style={{
@@ -50,10 +72,28 @@ export default ({ imgUrl, name, engName, email, github }) => (
           alignItems: 'center',
         }}
       >
-        <span>{ name }</span>
-        <span>{ engName }</span>
-        <span>{ email }</span>
-        <span>{ github }</span>
+        <NameStyle>
+          { name }
+        </NameStyle>
+
+        <NameStyle>
+          { engName }
+        </NameStyle>
+
+        <LinkStyle href={`mailto:${email}`}>
+          <FontAwesomeIcon icon={faEnvelope} />{ email }
+        </LinkStyle>
+
+        <LinkStyle href={github.url} target="_blank">
+          <FontAwesomeIcon icon={faGithub} />
+          { github.account }
+        </LinkStyle>
+
+        <LinkStyle href={medium.url}>
+          <FontAwesomeIcon icon={faMediumM} />
+          { medium.account }
+        </LinkStyle>
+        
       </div>
     </div>
   </ComponentStyle>

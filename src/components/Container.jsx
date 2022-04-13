@@ -9,7 +9,7 @@ const ComponentStyle = styled.div`
 `;
 
 export default (props) => (
-  <ComponentStyle>
+  <ComponentStyle className="Container">
     {props.children}
   </ComponentStyle>
 );

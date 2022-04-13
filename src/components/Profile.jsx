@@ -47,7 +47,7 @@ const LinkStyle = styled.a`
 // github(github)
 
 export default ({ imgUrl, name, engName, email, github, medium }) => (
-  <ComponentStyle>
+  <ComponentStyle className="profile">
     <div
       style={{
         display: 'flex',

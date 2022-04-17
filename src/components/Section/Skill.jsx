@@ -14,6 +14,8 @@ const ChipStyle = styled.div`
   color: white;
 `;
 
+// 技能卡
+
 export default (props) => (
   <Section
     title='技能'

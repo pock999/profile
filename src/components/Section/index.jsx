@@ -14,8 +14,6 @@ export default (props) => (
   <ComponentStyle className="Card">
     <TitleStyle>{props.title}</TitleStyle>
     <hr />
-    <p>
-      {props.children}
-    </p>
+    {props.children}
   </ComponentStyle>
 );

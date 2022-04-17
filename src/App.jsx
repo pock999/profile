@@ -16,7 +16,9 @@ const App = () => (
     <Card>
       <Profile {...data.profile} />
 
-      <Skill/>
+      <Skill
+        skills={data.skill}
+      />
       <About>
         {data.about}
       </About>

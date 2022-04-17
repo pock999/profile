@@ -27,7 +27,7 @@ export default (props) => (
       }}
     >
     {
-      props.skills.map(sk => <ChipStyle>{sk}</ChipStyle>)
+      props.skills.map(sk => <ChipStyle key={sk}>{sk}</ChipStyle>)
     }
     </div>
   </Section>

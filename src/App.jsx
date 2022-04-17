@@ -17,12 +17,14 @@ const App = () => (
       <Profile {...data.profile} />
 
       <Skill
-        skills={data.skill}
+        skills={data.skills}
       />
       <About>
         {data.about}
       </About>
-      <Education />
+      <Education
+        educations={data.educations}
+      />
       <Experience />
 
     </Card>

@@ -6,6 +6,7 @@ const ComponentStyle = styled.div`
   margin: auto;
   max-width: 960px;
   padding-top: 50px;
+  padding-bottom: 50px;
 `;
 
 export default (props) => (

@@ -32,6 +32,11 @@ const IconContainer = styled.div`
   justify-content: center;
   item-align: center;
 
+  border-radius: 5px 5px 0 0;
+  background-color: ${props => props.iconColor ? props.iconColor : 'white'};
+  color: ${props => props.iconColor ? 'white' : 'black'};
+  padding: 20px 0 20px 0;
+
   font-size: 4em;
 `;
 
@@ -40,9 +45,11 @@ const TitleContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   item-align: center;
-  font-size: 18px
-  font-weight: bold;
+  font-size: 20px;
+  font-weight: bolder;
   padding: 5px;
+
+  color: ${props => props.iconColor ? props.iconColor : 'black'};
 `;
 
 // card image
@@ -52,13 +59,13 @@ export default (props) => (
     {
       props.icon 
       ?
-        <IconContainer>
+        <IconContainer iconColor={props.iconColor}>
           <FontAwesomeIcon icon={props.icon} />
         </IconContainer>
       : null
     }
     {
-      props.title ? <TitleContainer>{props.title}</TitleContainer> : null
+      props.title ? <TitleContainer iconColor={props.iconColor}>{props.title}</TitleContainer> : null
     }
     {props.children}
   </ComponentStyle>

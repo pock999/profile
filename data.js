@@ -19,16 +19,19 @@ export default {
   skills: [
     {
       icon: 'js',
+      iconColor: '#E5AC1C',
       title: 'JavaScript',
       items: ['React', 'Redux', 'Vue', 'Webpack', 'ES6', 'Redux'],
     },
     {
       icon: 'nodejs',
+      iconColor: '#689C63',
       title: 'Node.js',
       items: ['Express.js', 'Sails.js', 'Sequelize(ORM)'],
     },
     {
       icon: 'ellipsis',
+      iconColor: '#3e9de6',
       title: 'Others',
       items: ['HTML5/CSS3', 'Bootstrap', 'Material-ui', 'Vuetify', 'Ant Design'],
     },

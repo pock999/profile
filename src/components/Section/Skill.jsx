@@ -28,6 +28,7 @@ export default (props) => (
             key={sk.title}
             title={sk.title}
             ma={5}
+            iconColor={sk.iconColor}
             icon={
               sk.icon === 'js' ? faJs
               : sk.icon === 'nodejs' ? faNodeJs
@@ -35,7 +36,18 @@ export default (props) => (
               : null
             }
           >
-            {sk.items.map(item => (<>{item}<br/></>))}
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                paddingTop: 10,
+                paddingBottom: 10,
+              }}
+            >
+              {sk.items.map(item => (<div key={item} style={{marginTop: 5}}>{item}</div>))}
+            </div>
+            
           </Card>
         )
       }

@@ -26,7 +26,7 @@ export default (props) => (
           <br />
           <h4 className="vertical-timeline-element-subtitle">使用技術: {exp.useTech}</h4>
           <p>
-            {exp.list.map(item => (<>{item} <br /></>))}
+            {exp.list.map(item => (<span key={item}>{item} <br /></span>))}
           </p>
         </VerticalTimelineElement>
       ))}

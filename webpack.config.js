@@ -46,6 +46,7 @@ module.exports = {
       systemvars: true,
     }),
     new HtmlWebpackPlugin({
+      // 解決 onClick 失效
       name: "index.html",
       inject: false,
       template: 'public/index.html'

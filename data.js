@@ -36,6 +36,16 @@ export default {
       items: ['Git', 'HTML5/CSS3', 'Bootstrap', 'Material-ui', 'Vuetify', 'Ant Design'],
     },
   ],
+  portfolios: [
+    {
+      title: '大學專題',
+      period: '2019 1月 ~ 2019 12月',
+      infoList: [
+        '通過108年度科技部大專學生研究計畫(題目: 基於大數據及類神經網路分析之台灣蔬果價量預測模型平台)',
+        '入圍第24屆大專校院資訊應用服務創新競賽決賽(題目: 蒔價)',
+      ],
+    },
+  ],
   educations: [
     {
       school: '國立雲林科技大學',
@@ -46,6 +56,35 @@ export default {
       school: '國立鳳山商工',
       major: '國際貿易科',
       period: '2013 9月 ~ 2016 6月',
+    },
+  ],
+  experiences: [
+    {
+      workUnit: '財團法人技專校院入學測驗中心',
+      department: '資訊處-系統組',
+      jobTitle: '實習助理',
+      period: '2020 2月 ~ 2020 6月',
+      useTech: 'Java(Struts2 + Spring + Hibernate + Tiles) | MySQL',
+      list: [
+        '開發樂齡學習網-自主帶領人的填報及審核功能',
+        '樂齡學習網-部分頁面調整成RWD',
+        '樂齡學習網-登入時新增驗證碼的功能',
+        '樂齡學習網-網站維護',
+      ],
+    },
+    {
+      workUnit: '台大醫院雲林分院',
+      department: '資訊室',
+      jobTitle: '工讀生(產學合作)',
+      period: '2019 7月 ~ 2020 6月',
+      useTech: 'Python(Django、pytesseract、jieba) | Apache HTTP Server',
+      list: [
+        '參與開發初診預診表單(Django)',
+        '將開發系統部屬至測試機',
+        '協助原始資料文本清洗',
+        '測試 OCR 辨識健保卡',
+        '協助問診機器人開發除錯',
+      ],
     },
   ],
 };

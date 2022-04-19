@@ -73,11 +73,7 @@ export default ({ imgUrl, name, engName, email, github, medium }) => (
         }}
       >
         <NameStyle>
-          { name }
-        </NameStyle>
-
-        <NameStyle>
-          { engName }
+          { name }{' '}{engName }
         </NameStyle>
 
         <LinkStyle href={`mailto:${email}`}>

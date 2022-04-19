@@ -25,7 +25,9 @@ const App = () => (
       <Education
         educations={data.educations}
       />
-      <Experience />
+      <Experience
+        experiences={data.experiences}
+      />
 
     </Card>
   </Container>

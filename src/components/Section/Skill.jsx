@@ -42,7 +42,7 @@ export default (props) => (
                 flexDirection: 'column',
                 alignItems: 'center',
                 paddingTop: 10,
-                paddingBottom: 10,
+                paddingBottom: 20,
               }}
             >
               {sk.items.map(item => (<div key={item} style={{marginTop: 5}}>{item}</div>))}

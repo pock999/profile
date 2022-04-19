@@ -46,6 +46,8 @@ module.exports = {
       systemvars: true,
     }),
     new HtmlWebpackPlugin({
+      name: "index.html",
+      inject: false,
       template: 'public/index.html'
     }),
     // 複製靜態檔案

@@ -33,7 +33,7 @@ export default {
       icon: 'ellipsis',
       iconColor: '#3e9de6',
       title: 'Others',
-      items: ['HTML5/CSS3', 'Bootstrap', 'Material-ui', 'Vuetify', 'Ant Design'],
+      items: ['Git', 'HTML5/CSS3', 'Bootstrap', 'Material-ui', 'Vuetify', 'Ant Design'],
     },
   ],
   educations: [

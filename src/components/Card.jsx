@@ -16,6 +16,7 @@ const ComponentStyle = styled.div`
 
   @media (max-width: ${578}px) {
     width: 100%;
+    margin: ${props => props.ma ? props.ma * 2 : 0}px;
   }
 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

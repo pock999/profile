@@ -21,7 +21,7 @@ export default {
       icon: 'js',
       iconColor: '#E5AC1C',
       title: 'JavaScript',
-      items: ['React', 'Redux', 'Vue', 'Webpack', 'ES6', 'Redux'],
+      items: ['React', 'Redux', 'Vue', 'Webpack', 'ES6', 'Redux', 'React Native'],
     },
     {
       icon: 'nodejs',
@@ -60,11 +60,21 @@ export default {
   ],
   experiences: [
     {
+      workUnit: '',
+      department: '',
+      jobTitle: '軟體工程師',
+      period: '2021 4月 ~ 至今',
+      useTechs: ['JavaScript', 'React.js', 'Vue.js', 'Sails.js', 'React Native'],
+      list: [
+        '開發',
+      ],
+    },
+    {
       workUnit: '財團法人技專校院入學測驗中心',
       department: '資訊處-系統組',
       jobTitle: '實習助理',
       period: '2020 2月 ~ 2020 6月',
-      useTech: 'Java(Struts2 + Spring + Hibernate + Tiles) | MySQL',
+      useTechs: ['Java', 'Struts2', 'Spring', 'Hibernate', 'MySQL'],
       list: [
         '開發樂齡學習網-自主帶領人的填報及審核功能',
         '樂齡學習網-部分頁面調整成RWD',
@@ -77,7 +87,7 @@ export default {
       department: '資訊室',
       jobTitle: '工讀生(產學合作)',
       period: '2019 7月 ~ 2020 6月',
-      useTech: 'Python(Django、pytesseract、jieba) | Apache HTTP Server',
+      useTechs: ['Python', 'Django', 'pytesseract', 'jieba', 'Apache HTTP Server'],
       list: [
         '參與開發初診預診表單(Django)',
         '將開發系統部屬至測試機',

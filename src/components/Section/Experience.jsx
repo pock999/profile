@@ -4,6 +4,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 import Section from "./index";
+import Chip from '../Chip';
 
 export default (props) => (
   <Section
@@ -21,6 +22,22 @@ export default (props) => (
           iconStyle={{ background: '#f3ae23', color: 'white' }}
           key={exp.period}
         >
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              marginBottom: 5,
+            }}
+          >
+            {
+              exp.useTechs.map(tech => (
+                <Chip key={tech}>
+                  {tech}
+                </Chip>
+              ))
+            }
+          </div>
           <h2 className="vertical-timeline-element-title" style={{ marginBottom: '10px'}}>{exp.workUnit}({exp.department})</h2>
           <h3 className="vertical-timeline-element-subtitle">{exp.jobTitle}</h3>
           <br />

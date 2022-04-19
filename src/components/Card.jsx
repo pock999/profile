@@ -2,6 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const ComponentStyle = styled.div`
   background-color: white;
   border-radius: 5px;
@@ -24,6 +26,15 @@ const ComponentStyle = styled.div`
   }
 `;
 
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  item-align: center;
+
+  font-size: 4em;
+`;
+
 const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -38,6 +49,14 @@ const TitleContainer = styled.div`
 
 export default (props) => (
   <ComponentStyle className="Card" {...props}>
+    {
+      props.icon 
+      ?
+        <IconContainer>
+          <FontAwesomeIcon icon={props.icon} />
+        </IconContainer>
+      : null
+    }
     {
       props.title ? <TitleContainer>{props.title}</TitleContainer> : null
     }

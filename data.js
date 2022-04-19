@@ -18,15 +18,18 @@ export default {
   about: `我是侯柏超，畢業於雲林科技大學資管系，個性為人和善，在團隊合作時，樂於分享想法和經驗提供團隊做參考；是一個喜歡串接API以實現畫面功能的軟體工程師，為了促使自己擁有更全面的思維，因此也使用後端開發過API。`,
   skills: [
     {
+      icon: 'js',
       title: 'JavaScript',
       items: ['React', 'Redux', 'Vue', 'Webpack', 'ES6', 'Redux'],
     },
     {
+      icon: 'nodejs',
       title: 'Node.js',
       items: ['Express.js', 'Sails.js', 'Sequelize(ORM)'],
     },
     {
-      title: '其他',
+      icon: 'ellipsis',
+      title: 'Others',
       items: ['HTML5/CSS3', 'Bootstrap', 'Material-ui', 'Vuetify', 'Ant Design'],
     },
   ],

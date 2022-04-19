@@ -13,7 +13,7 @@ import data from '../data';
 
 const App = () => (
   <Container>
-    <Card>
+    <Card col={12} pa={10}>
       <Profile {...data.profile} />
 
       <Skill

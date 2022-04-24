@@ -76,16 +76,16 @@ export default {
       period: '2020 2月 ~ 2020 6月',
       useTechs: ['Java', 'Struts2', 'Spring', 'Hibernate', 'MySQL'],
       list: [
-        '開發樂齡學習網-自主帶領人的填報及審核功能',
-        '樂齡學習網-部分頁面調整成RWD',
-        '樂齡學習網-登入時新增驗證碼的功能',
-        '樂齡學習網-網站維護',
+        '教育部樂齡學習網-自主帶領人的填報及審核功能',
+        '教育部樂齡學習網-頁面樣式調整成RWD',
+        '教育部樂齡學習網-後台登入時新增驗證碼的功能',
+        '教育部樂齡學習網-網站維護',
       ],
     },
     {
       workUnit: '台大醫院雲林分院',
       department: '資訊室',
-      jobTitle: '工讀生(產學合作)',
+      jobTitle: '工讀生(雲林科技大學巨量資料研究中心產學合作)',
       period: '2019 7月 ~ 2020 6月',
       useTechs: ['Python', 'Django', 'pytesseract', 'jieba', 'Apache HTTP Server'],
       list: [

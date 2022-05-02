@@ -38,7 +38,10 @@ export default (props) => (
               ))
             }
           </div>
-          <h2 className="vertical-timeline-element-title" style={{ marginBottom: '10px'}}>{exp.workUnit}({exp.department})</h2>
+          <h2 className="vertical-timeline-element-title" style={{ marginBottom: '10px'}}>
+            {exp.workUnit}
+            {exp.department && <>({exp.department})</>}
+          </h2>
           <h3 className="vertical-timeline-element-subtitle">{exp.jobTitle}</h3>
           <br />
           <p>

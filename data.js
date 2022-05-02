@@ -33,7 +33,7 @@ export default {
       icon: 'ellipsis',
       iconColor: '#3e9de6',
       title: 'Others',
-      items: ['Git', 'HTML5/CSS3', 'Bootstrap', 'Material-ui', 'Vuetify', 'Ant Design'],
+      items: ['Git', 'HTML5/CSS3', 'Bootstrap', 'Python', 'Java', 'Material-ui', 'Vuetify', 'Ant Design'],
     },
   ],
   portfolios: [
@@ -60,19 +60,23 @@ export default {
   ],
   experiences: [
     {
-      workUnit: '',
+      workUnit: '旻杰科技股份有限公司',
       department: '',
       jobTitle: '軟體工程師',
       period: '2021 4月 ~ 至今',
-      useTechs: ['JavaScript', 'React.js', 'Vue.js', 'Sails.js', 'React Native'],
+      useTechs: ['JavaScript', 'React.js', 'Vue.js', 'Sails.js', 'React Native', 'Electron'],
       list: [
-        '開發',
+        '開發販賣機銷售後台',
+        '雲端檔案管理系統',
+        '競賽評分系統',
+        '便當販賣機螢幕操作介面',
+        '簡易POS系統',
       ],
     },
     {
       workUnit: '財團法人技專校院入學測驗中心',
       department: '資訊處-系統組',
-      jobTitle: '實習助理',
+      jobTitle: '實習',
       period: '2020 2月 ~ 2020 6月',
       useTechs: ['Java', 'Struts2', 'Spring', 'Hibernate', 'MySQL'],
       list: [
@@ -85,7 +89,7 @@ export default {
     {
       workUnit: '台大醫院雲林分院',
       department: '資訊室',
-      jobTitle: '工讀生(雲林科技大學巨量資料研究中心產學合作)',
+      jobTitle: '產學合作(雲林科技大學巨量資料研究中心)',
       period: '2019 7月 ~ 2020 6月',
       useTechs: ['Python', 'Django', 'pytesseract', 'jieba', 'Apache HTTP Server'],
       list: [

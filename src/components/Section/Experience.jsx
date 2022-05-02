@@ -41,7 +41,6 @@ export default (props) => (
           <h2 className="vertical-timeline-element-title" style={{ marginBottom: '10px'}}>{exp.workUnit}({exp.department})</h2>
           <h3 className="vertical-timeline-element-subtitle">{exp.jobTitle}</h3>
           <br />
-          <h4 className="vertical-timeline-element-subtitle">使用技術: {exp.useTech}</h4>
           <p>
             {exp.list.map(item => (<span key={item}>{item} <br /></span>))}
           </p>

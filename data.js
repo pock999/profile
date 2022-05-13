@@ -76,7 +76,7 @@ export default {
     {
       workUnit: '財團法人技專校院入學測驗中心',
       department: '資訊處-系統組',
-      jobTitle: '實習',
+      jobTitle: '資訊助理工程師(實習)',
       period: '2020 2月 ~ 2020 6月',
       useTechs: ['Java', 'Struts2', 'Spring', 'Hibernate', 'MySQL'],
       list: [

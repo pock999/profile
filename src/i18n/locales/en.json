@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "name": "侯柏超",
+    "engName": "6666"
+  },
+  "about": "我是侯柏超，畢業於雲林科技大學資管系，個性為人和善，在團隊合作時，樂於分享想法和經驗提供團隊做參考；是一個喜歡實現畫面功能的軟體工程師，為了促使自己擁有更全面的思維，常使用React、Vue打造不一樣的作品，並且時常接觸不同領域，拓展自己的視野。",
+  "skills": [
+    {
+      "title": "JavaScript",
+      "items": ["React", "Redux", "Vue", "Webpack", "ES6", "Redux", "React Native"]
+    },
+    {
+      "title": "Node.js",
+      "items": ["Express.js", "Sails.js", "Sequelize(ORM)"]
+    },
+    {
+      "title": "Others",
+      "items": ["Git", "HTML5/CSS3", "Bootstrap", "Python", "Java", "Material-ui", "Vuetify", "Ant Design"]
+    }
+  ],
+  "portfolios": [
+    {
+      "title": "大學專題",
+      "period": "2019 1月 ~ 2019 12月",
+      "infoList": [
+        "通過108年度科技部大專學生研究計畫(題目: 基於大數據及類神經網路分析之台灣蔬果價量預測模型平台)",
+        "入圍第24屆大專校院資訊應用服務創新競賽決賽(題目: 蒔價)"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "workUnit": "旻杰科技股份有限公司",
+      "jobTitle": "軟體工程師",
+      "period": "2021 4月 ~ 至今",
+      "list": [
+        "開發販賣機銷售後台",
+        "雲端檔案管理系統",
+        "競賽評分系統",
+        "便當販賣機螢幕操作介面",
+        "簡易POS系統"
+      ]
+    }
+  ]
+}

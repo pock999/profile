@@ -7,4 +7,15 @@ export default {
     "medium": "https://medium.com/@rickh999"
   },
   imgUrl,
+  lang: [
+    {
+      key: 'zh-TW',
+      text: '繁中'
+    },
+    // TODO: 新增語系
+    // {
+    //   key: 'en',
+    //   text: 'English'
+    // }
+  ]
 };

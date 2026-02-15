@@ -1,8 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-import data from '../data';
-
 const App = () => {
   const { t } = useTranslation();
   const [showButton, setShowButton] = React.useState(false);
@@ -32,7 +30,12 @@ const App = () => {
 
   return (
     <div style={{marginTop: 200}}>
-      {t('profile.name')}
+        <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+        <h1 className="text-5xl font-bold text-sky-400">
+          Tailwind 啟動成功！
+          {t('profile.name')}
+        </h1>
+      </div>
     </div>
   );
 };

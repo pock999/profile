@@ -1,6 +1,6 @@
 import React from 'react';
 import config from '../config';
-import {LanguageSwitcher, ScrollToTop, Header, About, Experience, Skills, Portfolios, Education, Footer} from './components'
+import {LanguageSwitcher, ScrollToTop, Header, About, Experience, Skills, Portfolios, Education, Certificates, Footer} from './components'
 
 const App = () => {
 
@@ -18,6 +18,7 @@ const App = () => {
           <Skills />
           <Portfolios />
           <Education />
+          <Certificates />
         </main>
 
         <Footer />

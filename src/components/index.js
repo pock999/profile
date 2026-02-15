@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Portfolios from "./Portfolios";
 import Education from "./Education";
+import Certificates from "./Certificates";
 import Footer from "./Footer";
 
 export {
@@ -17,5 +18,6 @@ export {
   Skills,
   Portfolios,
   Education,
+  Certificates,
   Footer
 };

@@ -94,5 +94,22 @@
         ]
       }
     ]
+  },
+  "certificate": {
+    "title": "證照",
+    "content": [
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "issueDate": "2023/08/25"
+      },
+      {
+        "name": "JLPT N4",
+        "issueDate": "2024/01/11"
+      },
+      {
+        "name": "TOEIC 665",
+        "issueDate": "2022/07/31"
+      }
+    ]
   }
 }

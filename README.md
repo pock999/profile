@@ -1,3 +1,9 @@
-## 參考
-- [sbayd / react-cv](https://github.com/sbayd/react-cv/blob/master/src/index.js)
-- [stephanemonnot](https://stephanemonnot.com/)
+# Rick Hou | Profile
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18 (Vite)
+- **Styling:** Tailwind CSS
+- **Internationalization:** i18next (Supports zh-TW/EN)
+- **Deployment:** GitHub Actions & GitHub Pages
+- **Development Assistant:** [Google Gemini](https://gemini.google.com/)

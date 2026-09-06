@@ -68,7 +68,7 @@
       },
       {
         "title": "Database & Data Access",
-        "items": ["SQL", "PostgreSQL", "MySQL", "Sequelize", "Hibernate", "JDBC Template / NamedParameterJdbcTemplate"]
+        "items": ["SQL", "PostgreSQL", "MySQL", "Sequelize", "Hibernate"]
       },
       {
         "title": "Tools & Deployment",

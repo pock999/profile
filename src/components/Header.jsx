@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Github, Mail, BookOpen, Globe } from 'lucide-react';
+import { Github, Mail, BookOpen, Globe, Linkedin } from 'lucide-react';
 
 const Header = (config) => {
   const { t } = useTranslation();
@@ -18,6 +18,9 @@ const Header = (config) => {
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
           <a href={`mailto:${config.info.email}`} className="flex items-center gap-2 hover:text-blue-400 transition-colors">
             <Mail size={18} /> {config.info.email}
+          </a>
+          <a href={config.info.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+            <Linkedin size={18} /> Linkedin
           </a>
           <a href={config.info.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
             <Github size={18} /> GitHub

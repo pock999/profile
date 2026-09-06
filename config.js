@@ -4,7 +4,8 @@ export default {
   info: {
     "email": "hpx210650@gmail.com",
     "github": "https://github.com/pock999",
-    "medium": "https://medium.com/@rickh999"
+    "medium": "https://medium.com/@rickh999",
+    "linkedin": "https://www.linkedin.com/in/rick-hou-ba1a04184/"
   },
   imgUrl,
   lang: [

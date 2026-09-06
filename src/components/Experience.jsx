@@ -5,20 +5,20 @@ const Experience = () => {
   const { t } = useTranslation();
   return (
     <section>
-      <h2 className="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">{t('experiences.title')}</h2>
+      <h2 className="mb-6 text-3xl font-black uppercase">{t('experiences.title')}</h2>
       <div className="space-y-8">
         {t('experiences.content', { returnObjects: true }).map((exp, idx) => (
-          <div key={idx} className="relative pl-6 border-l-2 border-gray-200">
-            <div className="absolute -left-[9px] top-1 w-4 h-4 bg-blue-600 rounded-full"></div>
-            <h3 className="text-xl font-bold">{exp.workUnit}</h3>
-            <p className="text-blue-600 font-medium">{exp.jobTitle} | {exp.period}</p>
-            <p className="text-gray-600 font-medium pl-5 mt-2">{exp.summary}</p>
-            <ul className="list-disc ml-5 mt-3 text-gray-600 space-y-1">
+          <div key={idx} className="relative border-[3px] border-black bg-[#F4F4F0] p-5 shadow-[6px_6px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0_#000]">
+            <div className="absolute -left-[11px] top-5 h-4 w-4 border-2 border-black bg-[#FFDE4D]"></div>
+            <h3 className="text-xl font-black uppercase">{exp.workUnit}</h3>
+            <p className="mt-1 font-mono text-sm font-bold text-[#087F78]">{exp.jobTitle} | {exp.period}</p>
+            <p className="mt-3 font-medium text-slate-700">{exp.summary}</p>
+            <ul className="ml-5 mt-3 list-disc space-y-1 text-slate-700">
               {exp.list.map((item, i) => <li key={i}>{item}</li>)}
             </ul>
             <div className="flex flex-wrap gap-2 mt-5">
               {exp.technologies.map((item, i) => (
-                <span key={i} className="px-2 py-1 bg-white border border-gray-200 text-sm text-gray-600 rounded shadow-sm">
+                <span key={i} className="border-2 border-black bg-white px-2 py-1 font-mono text-xs font-bold">
                   {item}
                 </span>
               ))}

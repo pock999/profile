@@ -14,6 +14,7 @@ const Header = (config) => {
       <div className="text-center md:text-left">
         <h1 className="text-4xl font-bold">{t('profile.name')}</h1>
         <p className="text-xl text-slate-300 mt-1">{t('profile.engName')}</p>
+        <p className="text-l text-slate-100 mt-3">{t('profile.title')}</p>
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
           <a href={`mailto:${config.info.email}`} className="flex items-center gap-2 hover:text-blue-400 transition-colors">
             <Mail size={18} /> {config.info.email}

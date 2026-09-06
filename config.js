@@ -12,10 +12,9 @@ export default {
       key: 'zh-TW',
       text: '繁中'
     },
-    // TODO: 新增語系
-    // {
-    //   key: 'en',
-    //   text: 'English'
-    // }
+    {
+      key: 'en',
+      text: 'English'
+    }
   ]
 };

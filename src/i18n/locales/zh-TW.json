@@ -1,63 +1,86 @@
 {
   "profile": {
     "name": "侯柏超 (Rick Hou)",
-    "engName": "Po-Chao, Hou"
+    "engName": "Po-Chao, Hou",
+    "title": "Software Engineer | Backend-Focused Full-Stack Development | Enterprise Applications · Data Platforms · SCM Systems"
   },
   "about": {
     "title": "關於我",
-    "content": "我是一名具備三年多經驗的軟體工程師，主要投入於後端系統與 Web 應用的開發，熟悉以全端技術協助團隊完成產品需求。工作中重視系統穩定性與程式結構，也習慣與團隊成員密切討論，從實際問題出發找出合適的解決方式。對於新技術與後端相關知識保持高度興趣，並在工作之餘持續學習與精進，希望在快速變動的技術環境中，累積能真正解決問題的工程能力，走出屬於自己的價值。"
+    "content": "我是一名具備約五年軟體開發經驗的軟體工程師，具備全端開發背景，目前是以後端系統開發為主要發展方向。曾參與企業供應鏈管理系統、訂單與出貨流程及內部資料平台等專案，具備 Java／Spring Boot、Node.js、PostgreSQL 等技術的實務經驗。工作中除了系統開發，也參與需求訪談與流程分析，習慣理解實際需求與系統運作脈絡，將業務需求轉換為系統功能與技術實作，並重視解決方案在實際情境中的可行性。對新技術保持興趣，也願意持續學習與累積工程實務經驗。"
   },
   "experiences": {
     "title": "工作經驗",
     "content": [
-    {
-      "workUnit": "緯創資通股份有限公司",
-      "jobTitle": "軟體工程師 (Full Stack)",
-      "period": "2022/10 ~ 現在",
-      "list": [
-        "主要負責供應鏈管理（SCM）系統與內部資料平台之後端系統開發",
-        "使用 Java（Spring Boot） 設計與實作業務模組，優化既有流程並提升系統穩定度與使用效率",
-        "與 User 密切合作，釐清實際痛點並開發對應功能，協助系統落地於實務流程中",
-        "參與公司數位轉型相關專案，協助既有系統現代化與新系統導入",
-        "於資料平台專案中，使用 Node.js、Angular 與 PostgreSQL 建置穩定的資料服務，支援內部資料分析與決策需求"
-      ]
-    },
-    {
-      "workUnit": "旻杰科技股份有限公司",
-      "jobTitle": "軟體工程師",
-      "period": "2021/4 ~ 2022/9",
-      "list": [
-        "以 Node.js（Express、Sails.js） 與 React 進行全端系統開發，主要服務智慧零售相關專案",
-        "負責販賣機後台管理系統、銷售儀表板與前端操作介面之開發與維護",
-        "參與多元專案，包含 POS 系統、競賽計分平台與教育單位委託系統",
-        "在新創環境中累積從需求討論、系統設計到實作與上線的完整經驗，提升對商業需求的理解與轉化能力"
-      ]
-    },
-    {
-      "workUnit": "技專校院入學測驗中心",
-      "jobTitle": "資訊工程師 (Intern)",
-      "period": "2020/2 ~ 2020/6",
-      "list": [
-        "教育部「樂齡學習網」系統功能開發與維護",
-        "協助既有功能調整、問題修正與基本系統維運工作"
-      ]
-    }
-  ]
+      {
+        "workUnit": "緯創資通股份有限公司",
+        "jobTitle": "全端工程師 (Full-Stack Software Engineer)",
+        "period": "2022/10 ~ 2026/05",
+        "summary": "負責企業內部供應鏈管理（SCM）系統與資料服務平台開發，以後端開發為主，具備 Java、Node.js 及前後端整合經驗。",
+        "list": [
+          "使用 Java / Spring Boot 開發 SCM 系統模組，負責訂單追蹤、出貨及生產狀態等功能，將既有人工處理流程系統化，提升作業效率。",
+          "Smart Shipment｜出貨流程管理系統：針對原需跨 SAP、MES 與庫存管理系統人工查詢與彙整的出貨流程，負責後端流程、報表邏輯與跨系統資料整合。基於既有 Airflow DAG 調整資料流程，並應用 Redis Distributed Lock 處理資料同步與操作衝突，支援每日百筆以上 DN 開立需求。",
+          "Order Confirmation｜訂單生產狀態追蹤系統：針對訂單、生產與缺料資訊分散於不同系統的問題，負責後端流程及資料整合，並依不同品牌拆分業務模組、建立資料完整性檢查，支援每日約 10,000～20,000 筆訂單狀態追蹤，部分報表產出時間由約 2 小時縮短至 10～20 分鐘。",
+          "Data Service Portal｜企業內部資料服務平台：參與資料字典與資料服務管理功能設計，使用 Node.js、Angular、PostgreSQL 開發前端功能及前後端 API 整合，協助集中管理企業內部 API、Batch 與 Event 等資料服務資訊。",
+          "參與需求訪談與業務情境釐清，與 Tech Lead 及使用者共同確認需求，將業務需求轉換為系統功能與處理流程。",
+          "參與 EOM 停產料件管理流程開發，負責 BOM 與物料關係判斷、請款分配邏輯及報表功能。"
+        ],
+        "technologies": ["Java", "Spring Boot", "Node.js", "Angular", "PostgreSQL", "Redis", "Airflow", "Kafka", "Docker", "Kubernetes"]
+      },
+      {
+        "workUnit": "旻杰科技股份有限公司",
+        "jobTitle": "軟體工程師 (Software Engineer)",
+        "period": "2021/04 ~ 2022/09",
+        "summary": "以 Node.js（Express.js、Sails.js）與 React 進行全端系統開發，主要參與智慧零售相關專案，並累積 POS、競賽評分及活動管理等不同應用場景的系統開發經驗。",
+        "list": [
+          "使用 Node.js（Express.js、Sails.js）與 React 進行全端開發，負責後端 API、資料處理及前端操作介面。",
+          "販賣機銷售後台：開發營運管理後台，整合交易資料，提供銷售統計、交易紀錄查詢及設備狀態管理等功能，協助智慧零售業務流程數位化。",
+          "參與 POS 系統、競賽評分平台及活動管理網站等專案，依不同業務情境進行功能設計與系統開發。",
+          "於新創環境中參與從需求討論、系統設計、開發至上線的完整流程，累積將業務需求轉換為實際系統功能的經驗。"
+        ],
+        "technologies": ["Node.js", "Express.js", "Sails.js", "React"]
+      },
+      {
+        "workUnit": "技專校院入學測驗中心",
+        "jobTitle": "資訊助理工程師 (Intern)",
+        "period": "2020/02 ~ 2020/06",
+        "list": [
+          "參與教育部「樂齡學習網」系統開發與維護，協助既有功能調整、問題修正及基本系統維運。",
+          "因應資安需求調整使用者驗證流程，累積既有系統維護與功能開發經驗。"
+        ],
+        "technologies": ["Java", "JSP"]
+      }
+    ]
   },
   "skills": {
     "title": "技能",
     "content": [
       {
-        "title": "Backend",
-        "items": ["Node.js", "Java", "Sprint Boot", "PostgreSQL"]
+        "title": "Programming Languages",
+        "items": ["JavaScript", "TypeScript", "Java", "Python"]
       },
       {
-        "title": "Frontend",
-        "items": ["React", "Angular", "HTML5/CSS3"]
+        "title": "Backend Development",
+        "items": ["Node.js", "Spring Boot", "Express.js", "Sails.js", "LoopBack 4"]
       },
       {
-        "title": "Others",
-        "items": ["Git", "Docker", "Python"]
+        "title": "Frontend Development",
+        "items": ["React", "Angular", "HTML / CSS", "SCSS"]
+      },
+      {
+        "title": "Database & Data Access",
+        "items": ["SQL", "PostgreSQL", "MySQL", "Sequelize", "Hibernate", "JDBC Template / NamedParameterJdbcTemplate"]
+      },
+      {
+        "title": "Tools & Deployment",
+        "items": ["Git", "Docker", "Kubernetes", "GitLab CI/CD"]
+      },
+      {
+        "title": "Data & Workflow",
+        "items": ["Redis", "Apache Airflow"]
+      },
+      {
+        "title": "Architecture",
+        "items":["RESTful API", "Microservices"]
       }
     ]
   },
@@ -71,12 +94,13 @@
       {
         "school": "國立雲林科技大學",
         "major": "資訊管理系",
-        "period": "2016/9 ~ 2020/6",
+        "degree": "學士",
+        "period": "2016/09 ~ 2020/06",
         "industryCooperation": [
           {
             "workUnit": "臺大醫院雲林斗六分院",
             "jobTitle": "資訊助理工程師",
-            "period": "2019/8 ~ 2019/12",
+            "period": "2019/08 ~ 2019/12",
             "list": [
               "協助院方開發預診系統，支援實際醫療流程使用",
               "進行病例與摘要資料之清洗與分析，並以資料視覺化方式呈現分析結果"
@@ -85,10 +109,11 @@
         ],
         "seniorProject": [
           {
-            "name": "基於大數據及類神經網路分析之台灣蔬果價量預測模型平台 (四人團隊)",
+            "name": "蒔價：基於大數據及類神經網路分析之台灣蔬果價量預測模型平台",
             "list": [
-              "專題名稱: 大專學生研究計畫 (計畫編號：108-2813-C-224-025-H)",
-              "入圍 2019 第 24 屆大專校院資訊應用服務創新競賽（蒔價，資訊應用組)"
+              "四人團隊專題，並獲科技部大專學生研究計畫補助（計畫編號：MOST 108-2813-C-224-025-H）。",
+              "負責系統架構設計與 Django 前後端開發，進行資料整理、缺失值處理、資料視覺化，並整合 ARMA 預測結果與 KD、RSI 等技術指標。",
+              "專題作品「蒔價」入圍 2019 第 24 屆大專校院資訊應用服務創新競賽資訊應用組。"
             ]
           }
         ]
@@ -96,19 +121,19 @@
     ]
   },
   "certificate": {
-    "title": "證照",
+    "title": "證照與語檢",
     "content": [
       {
         "name": "AWS Certified Cloud Practitioner",
         "issueDate": "2023/08/25"
       },
       {
-        "name": "JLPT N4",
-        "issueDate": "2024/01/11"
-      },
-      {
         "name": "TOEIC 665",
         "issueDate": "2022/07/31"
+      },
+      {
+        "name": "JLPT N4",
+        "issueDate": "2024/01/11"
       }
     ]
   }

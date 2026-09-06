@@ -109,7 +109,7 @@
         ],
         "seniorProject": [
           {
-            "name": "Shih-Jia: Big Data and Neural Network-Based Price-Volume Forecasting Model Platform for Taiwanese Fruits and Vegetables",
+            "name": "蒔價: 基於大數據及類神經網路分析之台灣蔬果價量預測模型平台",
             "list": [
               "Developed as a four-member team project and supported by the Ministry of Science and Technology Undergraduate Research Program (Project No. MOST 108-2813-C-224-025-H).",
               "Responsible for system architecture and full-stack development with Django, including data processing, missing-value handling, data visualization, and integration of ARMA forecasting results with KD and RSI technical indicators.",

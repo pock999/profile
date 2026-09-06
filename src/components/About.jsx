@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 const About = () => {
   const { t } = useTranslation();
   return (
-    <section>
-      <h2 className="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-4">{t('about.title')}</h2>
-      <p className="text-gray-700 leading-relaxed text-lg">
+    <section className="border-l-[10px] border-[#7EE7DC] pl-5">
+      <h2 className="mb-4 text-3xl font-black uppercase">{t('about.title')}</h2>
+      <p className="text-lg font-medium leading-relaxed text-slate-700">
         {t('about.content')}
       </p>
     </section>

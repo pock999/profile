@@ -5,14 +5,14 @@ import {LanguageSwitcher, ScrollToTop, Header, About, Experience, Skills, Portfo
 const App = () => {
 
   return (
-    <div className="min-h-screen bg-gray-100 py-10 px-4 sm:px-6">
+    <div className="min-h-screen bg-[#F4F4F0] px-4 py-6 font-sans text-black sm:px-8 sm:py-10 lg:px-12">
       <LanguageSwitcher />
       <ScrollToTop />
 
-      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-lg overflow-hidden">
+      <div className="mx-auto max-w-6xl overflow-hidden border-[3px] border-black bg-white shadow-[10px_10px_0_#000]">
         <Header {...config} />
 
-        <main className="p-8 md:p-12 space-y-12">
+        <main className="space-y-14 p-6 sm:p-10 lg:p-14">
           <About />
           <Experience />
           <Skills />

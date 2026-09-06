@@ -5,20 +5,20 @@ const Education = () => {
   const { t } = useTranslation();
   return (
     <section>
-      <h2 className="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">{t('education.title')}</h2>
+      <h2 className="mb-6 text-3xl font-black uppercase">{t('education.title')}</h2>
       {t('education.content', { returnObjects: true }).map((edu, idx) => (
         <div key={idx} className="space-y-6">
-          <div>
-            <h3 className="text-xl font-bold text-slate-800">{edu.school}</h3>
-            <p className="text-blue-600 font-medium">{edu.major} | {edu.period}</p>
+          <div className="group border-[3px] border-black bg-[#F4F4F0] p-5 shadow-[5px_5px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0_#000]">
+            <h3 className="text-xl font-black uppercase text-slate-800">{edu.school}</h3>
+            <p className="font-mono text-sm font-bold text-[#087F78]">{edu.major} | {edu.period}</p>
           </div>
 
           {/* 產學合作 */}
           {edu.industryCooperation && edu.industryCooperation.map((coop, i) => (
-            <div key={i} className="ml-4 p-4 bg-slate-50 rounded-lg border-l-4 border-slate-300">
-              <h4 className="font-bold text-slate-700">產學合作：{coop.workUnit}</h4>
-              <p className="text-sm text-slate-500">{coop.jobTitle} ({coop.period})</p>
-              <ul className="list-disc ml-5 mt-2 text-gray-600 text-sm space-y-1">
+            <div key={i} className="ml-4 border-[3px] border-black bg-[#FFDE4D] p-4 shadow-[5px_5px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0_#000]">
+              <h4 className="font-black text-slate-700">產學合作：{coop.workUnit}</h4>
+              <p className="font-mono text-sm text-slate-700">{coop.jobTitle} ({coop.period})</p>
+              <ul className="ml-5 mt-2 list-disc space-y-1 text-sm text-slate-700">
                 {coop.list.map((item, j) => <li key={j}>{item}</li>)}
               </ul>
             </div>
@@ -26,9 +26,9 @@ const Education = () => {
 
           {/* 畢業專題 */}
           {edu.seniorProject && edu.seniorProject.map((project, i) => (
-            <div key={i} className="ml-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-300">
-              <h4 className="font-bold text-blue-800 underline decoration-blue-200">{project.name}</h4>
-              <ul className="list-disc ml-5 mt-2 text-gray-600 text-sm space-y-1">
+            <div key={i} className="ml-4 border-[3px] border-black bg-[#7EE7DC] p-4 shadow-[5px_5px_0_#000] transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[2px_2px_0_#000]">
+              <h4 className="font-black text-slate-800 underline decoration-2">{project.name}</h4>
+              <ul className="ml-5 mt-2 list-disc space-y-1 text-sm text-slate-700">
                 {project.list.map((item, j) => <li key={j}>{item}</li>)}
               </ul>
             </div>

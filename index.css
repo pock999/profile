@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	body {
+		margin: 0;
+		background: #f4f4f0;
+	}
+
+	::selection {
+		background: #7ee7dc;
+		color: #000;
+	}
+}

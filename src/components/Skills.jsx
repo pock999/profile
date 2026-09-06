@@ -5,14 +5,14 @@ const Skills = () => {
   const { t } = useTranslation();
   return (
     <section>
-      <h2 className="text-2xl font-bold border-b-2 border-blue-600 inline-block mb-6">{t('skills.title')}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <h2 className="mb-6 text-3xl font-black uppercase">{t('skills.title')}</h2>
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
         {t('skills.content', { returnObjects: true }).map((skill, idx) => (
-          <div key={idx} className="p-4 bg-gray-50 rounded-lg">
-            <h3 className="font-bold text-slate-800 mb-3 border-b border-gray-200 pb-2">{skill.title}</h3>
+          <div key={idx} className="border-[3px] border-black bg-[#7EE7DC] p-4 shadow-[5px_5px_0_#000]">
+            <h3 className="mb-3 border-b-2 border-black pb-2 font-black uppercase">{skill.title}</h3>
             <div className="flex flex-wrap gap-2">
               {skill.items.map((item, i) => (
-                <span key={i} className="px-2 py-1 bg-white border border-gray-200 text-sm text-gray-600 rounded shadow-sm">
+                <span key={i} className="border-2 border-black bg-white px-2 py-1 font-mono text-xs font-bold">
                   {item}
                 </span>
               ))}

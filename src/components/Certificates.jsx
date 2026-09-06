@@ -6,8 +6,8 @@ const Certificates = () => {
   const { t } = useTranslation();
   return (
     <section className="mt-12">
-      <div className="flex items-center gap-2 mb-6 border-b-2 border-blue-600 inline-flex pb-1">
-        <h2 className="text-2xl font-bold text-slate-800">
+      <div className="mb-6 border-b-[3px] border-black pb-1">
+        <h2 className="text-3xl font-black uppercase text-slate-800">
           {t('certificate.title')}
         </h2>
       </div>
@@ -16,12 +16,12 @@ const Certificates = () => {
         {t('certificate.content', { returnObjects: true }).map((cert, idx) => (
           <div 
             key={idx} 
-            className="group p-4 bg-white border border-slate-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all duration-300 flex flex-col justify-center"
+            className="group flex flex-col justify-center border-[3px] border-black bg-[#F4F4F0] p-4 transition-all duration-150 hover:translate-x-[4px] hover:translate-y-[4px] hover:shadow-[4px_4px_0_#000]"
           >
-            <h3 className="font-bold text-slate-700 group-hover:text-blue-700 transition-colors">
+            <h3 className="font-black text-slate-700 group-hover:text-[#087F78]">
               {cert.name}
             </h3>
-            <div className="flex items-center gap-2 text-sm text-slate-500 mt-2">
+            <div className="mt-2 flex items-center gap-2 font-mono text-sm text-slate-500">
               <Calendar size={14} />
               <span>{cert.issueDate}</span>
             </div>

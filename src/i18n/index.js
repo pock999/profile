@@ -5,6 +5,7 @@ import en from './locales/en.json';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -15,8 +16,11 @@ i18n
         translation: en 
       }
     },
-    lng: 'zh-TW',
-    fallbackLng: 'zh-TW',
+    detection: {
+      order: ['querystring', 'localStorage', 'navigator'],
+      lookupQuerystring: 'lang', // ?lang=en 或 ?lang=zh-TW
+      caches: ['localStorage'],
+    },
     interpolation: {
       escapeValue: false
     },

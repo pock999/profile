@@ -32,7 +32,9 @@ const Footer = () => {
       }
     };
 
-    updateVisitorCount();
+    if(!import.meta.env.DEV) {
+      updateVisitorCount();
+    }
 
     return () => {
       isMounted = false;

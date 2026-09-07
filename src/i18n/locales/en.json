@@ -136,5 +136,8 @@
         "issueDate": "2024/01/11"
       }
     ]
+  },
+  "footer": {
+    "visitors": "Visitors"
   }
 }
